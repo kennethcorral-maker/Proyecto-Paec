@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario del dia</title>
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+
+<header class="encabezado-fijo">
+    <h1>Formulario de tu dia </h1>
+    <nav>
+        <a href="index.html">Inicio</a> 
+        <a href="autoestima.html">Auto Estima</a> 
+        <a href="empatia.html">Empatía</a> 
+        <a href="autoregulacion.html">Auto Regulación</a> 
+        <a href="nosotros.html">Nosotros</a> 
+        <a href="formulario.html" class="activo">Formulario</a>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <form action="#" method="post">
+        
+        <div class="tarjeta-formulario">
+            <h3>Formulario 1 (Información): Trivia de Convivencia</h3>
+            <br>
+            <p><b>¿Qué componente de la autoestima implica cuidar tu cuerpo y tus horas de sueño?</b></p>
+            <div class="opcion-bloque">
+                <input type="radio" name="trivia1" value="A" id="t1">
+                <label for="t1">Autoconocimiento</label>
+            </div>
+            <div class="opcion-bloque">
+                <input type="radio" name="trivia1" value="B" id="t2">
+                <label for="t2">Autocuidado</label>
+            </div>
+        </div>
+
+        <div class="tarjeta-formulario">
+            <h3>Formulario 2 (Participa): Encuesta de Entorno</h3>
+            <br>
+            <label for="f_edad"><b>Edad del Estudiante (Número):</b></label>
+            <input type="number" name="edad" id="f_edad" placeholder="Ej: 16">
+
+            <label for="f_sel"><b>¿Qué técnica de autorregulación prefieres?</b></label>
+            <select name="tecnica" id="f_sel">
+                <option value="semaforo">Semáforo Emocional</option>
+                <option value="respiracion">Respiración Profunda</option>
+                <option value="dialogo">Diálogo Asertivo</option>
+            </select>
+
+            <label for="f_date"><b>Fecha de Hoy:</b></label>
+            <input type="date" name="fecha" id="f_date">
+
+            <p><b>¿Qué aspectos viste hoy en tu entorno? (Selecciona varios):</b></p>
+            <div class="opcion-bloque">
+                <input type="checkbox" name="aspectos[]" value="respeto" id="c1">
+                <label for="c1">Respeto entre compañeros</label>
+            </div>
+            <div class="opcion-bloque">
+                <input type="checkbox" name="aspectos[]" value="inclusion" id="c2">
+                <label for="c2">Inclusión escolar</label>
+            </div>
+        </div>
+
+        <div class="tarjeta-formulario">
+            <h3>Formulario 3 (Contacto): Buzón de Sugerencias</h3>
+            <br>
+            <table width="100%" border="0" cellspacing="25">
+                <tr>
+                    <td width="50%">
+                        <label for="txt_nom"><b>Nombre Completo:</b></label>
+                        <input type="text" name="nombre" id="txt_nom" placeholder="Ej: Juan Pérez">
+                        
+                        <label for="txt_em"><b>Correo Electrónico:</b></label>
+                        <input type="email" name="contacto" id="txt_em" placeholder="ejemplo@correo.com">
+
+                        <label for="txt_grp"><b>Grupo:</b></label>
+                        <input type="text" name="grupo" id="txt_grp" placeholder="Ej: 4to A">
+
+                        <label for="txt_com"><b>Escribe tu comentario o propuesta de convivencia:</b></label>
+                        <textarea name="comentario" id="txt_com" placeholder="Escribe aquí tu aportación..."></textarea>
+                    </td>
+                    <td width="50%" align="center">
+                        <img src="img/paec.jpg.png" alt="Buzón de sugerencias" width="100%" height="140">
+                        <br>
+                        <p>Tu opinión nos ayuda a construir un espacio educativo más seguro para todos. Este buzón constituye un canal directo de expresión para sugerir iniciativas comunitarias o solicitar apoyo de nuestro equipo especializado de forma strictly de confianza.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="margin: 20px 0;">
+            <button type="submit">Enviar Todo el Formulario</button>
+        </div>
+
+    </form>
+</main>
+
+<hr>
+
+<footer class="main-footer">
+    <div class="footer-container" style="display: block; text-align: center;">
+        <p style="text-align: center !important; color: #ffffff; margin-bottom: 5px;">Desarrollado por: Kevin Cota, Kenneth Corral, Brayan Esquer | Fuentes: <a href="https://www.gob.mx" target="_blank" style="color:#ffffff; text-decoration:underline; margin:0 5px; padding:0; background:none; display:inline; box-shadow:none;">Buzón SEP</a> - <a href="https://sep.gob.mx" target="_blank" style="color:#ffffff; text-decoration:underline; margin:0 5px; padding:0; background:none; display:inline; box-shadow:none;">Contacto PAEC</a></p>
+        <p style="text-align: center !important; color: #ffffff; font-size: 12px;">&copy; 2026 - Derechos Reservados</p>
+    </div>
+</footer>
+
+</body>
+</html>
